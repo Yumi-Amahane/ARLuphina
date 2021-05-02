@@ -1,1 +1,3 @@
-# ARLuphina
+# ARLuphina  
+
+AR.jsをちょっとやってみたいっていうおためし
