@@ -13,7 +13,7 @@ window.onload = function() {
   mmd.registerKeyListener(document);
   mmd.registerMouseListener(document);
 
-  var miku = new MMD.Model('model', 'LuphinaSB69.pmx');
+  var miku = new MMD.Model('model', 'LuphinaSB69.pmd');
 
 
 
