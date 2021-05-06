@@ -1,7 +1,7 @@
 <html>
 <meta charset="utf-8">
 <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
-<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+//<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 
 <script type="text/javascript">
 var Luphina;//Loaded obj
@@ -10,11 +10,10 @@ var Luphina;//Loaded obj
 <body style="margin: 0px; overflow: hidden;">
 	<a-scene>
 		<a-assets>
-			<a-asset-item id="Luphina-obj" src="model/LuphinaSB69.obj"></a-asset-item>
-			<a-asset-item id="Luphina-mtl" src="model/LuphinaSB69.mtl"></a-asset-item>
+			<a-asset-item id="Luphina-glb" src="model/LuphinaSB69.glb"></a-asset-item>
 		</a-assets>
 		
-		<a-entity obj-model="obj: #Luphina-obj;mtl:#Luphina-mtl" position="0 0 -4" rotation="0 0 0" scale="0.8 0.8 0.8"></a-entity>
+		<a-entity gltf-model="#Luphina-glb" position="0 0 -4" rotation="0 0 0" scale="0.8 0.8 0.8"></a-entity>
 		
 	</a-scene>
 
