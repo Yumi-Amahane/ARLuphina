@@ -4,18 +4,20 @@
 <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script>
 
 
-<script type="text/javascript">
-var Luphina;//Loaded obj
-</script>
-
 <body style="margin: 0px; overflow: hidden;">
 	<a-scene renderer="gammaOutput: true;">
 		<a-assets>
 			<a-asset-item id="Luphina-gltf" src="model/Luphina.gltf"></a-asset-item>
 		</a-assets>
 		
-		<a-entity gltf-model="#Luphina-gltf" position="0 0 -4" rotation="0 0 0" scale="0.2 0.2 0.2" animation-mixer>
+		<a-entity gltf-model="#Luphina-gltf" position="2 0 -4" rotation="0 0 0" scale="0.2 0.2 0.2" animation-mixer>
 		</a-entity>
+		
+		<a-entity light="type:point;"><a-entity>
 	</a-scene>
 </body>
+
+<script type="text/javascript">
+document.querySelector("a-scene").renderer.gammaOutput=true;
+</script>
 </html>
