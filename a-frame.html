@@ -1,6 +1,7 @@
 <html>
 <meta charset="utf-8">
 <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script>
 
 
 <script type="text/javascript">
@@ -8,14 +9,12 @@ var Luphina;//Loaded obj
 </script>
 
 <body style="margin: 0px; overflow: hidden;">
-	<a-scene>
-		<a-cube color="#0095DD" position="0 1 0" rotation="20 40 0"></a-cube>
-
+	<a-scene renderer="gammaOutput: true;">
 		<a-assets>
 			<a-asset-item id="Luphina-gltf" src="model/Luphina.gltf"></a-asset-item>
 		</a-assets>
 		
-		<a-entity gltf-model="#Luphina-gltf" position="0 0 -4" rotation="0 0 0" scale="0.8 0.8 0.8"></a-entity>
+		<a-entity gltf-model="#Luphina-gltf" position="0 0 -4" rotation="0 0 0" scale="0.2 0.2 0.2"></a-entity>
 	</a-scene>
 </body>
 </html>
