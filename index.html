@@ -8,12 +8,8 @@
 <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script>
 
 
-<script type="text/javascript">
-var Luphina;//Loaded obj
-</script>
-
 <body style="margin: 0px; overflow: hidden;">
-	<a-scene embedded arjs="debugUIEnabled:false;" renderer="gammaOutput: true;" vr-mode-ui="enabled: false">
+	<a-scene embedded arjs="debugUIEnabled:false;" ar-js='patternRatio: 0.5;' renderer="gammaOutput: true;" vr-mode-ui="enabled: false">
 		<a-assets>
 		<a-asset-item id="Luphina-gltf" src="model/Luphina.gltf"></a-asset-item>
 		</a-assets>
