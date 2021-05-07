@@ -13,23 +13,23 @@ var Luphina;//Loaded obj
 </script>
 
 <body style="margin: 0px; overflow: hidden;">
-	<a-scene renderer="gammaOutput: true;">
+	<a-scene embedded renderer="gammaOutput: true;">
 		<a-assets>
 		<a-asset-item id="Luphina-gltf" src="model/Luphina.gltf"></a-asset-item>
 		</a-assets>
 		
 		<a-marker preset="hiro">
 		
-			<a-entity gltf-model="#Luphina-gltf" position="0 0 0.5" rotation="-90 0 0" scale="0.1 0.1 0.1" animation-mixer>
+			<a-entity gltf-model="#Luphina-gltf" position="1 0 0.5" rotation="-90 0 0" scale="0.1 0.1 0.1" animation-mixer>
 			</a-entity>
 		
 			<a-entity light="type:point;"><a-entity>
 		</a-marker>
     	<a-entity camera></a-entity>
 	</a-scene>
+	
+	<script>
+		document.querySelector("a-scene").renderer.gammaInput = true;
+	</script>
 </body>
-
-<script type="text/javascript">
-document.querySelector("a-scene").renderer.gammaOutput=true;
-</script>
 </html>
