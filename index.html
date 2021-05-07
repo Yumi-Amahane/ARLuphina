@@ -13,7 +13,7 @@ var Luphina;//Loaded obj
 </script>
 
 <body style="margin: 0px; overflow: hidden;">
-	<a-scene embedded renderer="gammaOutput: true;">
+	<a-scene embedded arjs="debugUIEnabled:false;" renderer="gammaOutput: true;" vr-mode-ui="enabled: false">
 		<a-assets>
 		<a-asset-item id="Luphina-gltf" src="model/Luphina.gltf"></a-asset-item>
 		</a-assets>
@@ -23,7 +23,8 @@ var Luphina;//Loaded obj
 			<a-entity gltf-model="#Luphina-gltf" position="1 0 0.5" rotation="-90 0 0" scale="0.1 0.1 0.1" animation-mixer>
 			</a-entity>
 		
-			<a-entity light="type:point;"><a-entity>
+			<a-light type="ambient" color="#ffffff"></a-light>
+			<a-light type="point" intensity="2" position="1 4 0.5"></a-light>
 		</a-marker>
     	<a-entity camera></a-entity>
 	</a-scene>
